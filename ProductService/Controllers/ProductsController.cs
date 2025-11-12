@@ -27,7 +27,7 @@ namespace ProductService.Controllers
             Product product = _repo.GetById(id);
             if (product == null)
             {
-                return NotFound($"No Product Find with {id}");
+                return NotFound($"No Product Found with {id}");
             }
             return Ok(product);
         }
